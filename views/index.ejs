@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Contacts App</h1>
+    <a href="/add-contact">Add Contact</a>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>No Telepon</th>
+        </tr>
+        <% contacts.forEach((contact) => { %>
+        <tr>
+            <td><%= contact.nama %> </td>
+            <td><%= contact.no_telepon %> </td>
+        </tr>
+        <% }) %> 
+    </table>
+</body>
+</html>
